@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luigi Di Donna — CyberSecurity Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">LDD<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#education" class="mob-link">Education</a>
+    <a href="#certifications" class="mob-link">Certifications</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Luigi <span class="accent">Di Donna</span></h1>
+      <div class="hero-typewriter">
+        <span class="tw-prefix">$ </span><span id="typewriter"></span><span class="cursor">▊</span>
+      </div>
+      <p class="hero-tagline">
+        MSc CyberSecurity student at <strong>Politecnico di Milano</strong> · Building secure, intelligent systems.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/luigididonna" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/luigi-di-donna" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:luigididonna89@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <h2 class="section-title">Who I am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am characterized by strong determination and a constant search for new challenges and opportunities to enrich my knowledge, both personally and professionally.
+          </p>
+          <p>
+            I enjoy working and engaging in stimulating environments that encourage my ambition to excel and collaborate within teams. My adaptability and innovative spirit are qualities that continuously drive me to explore new horizons.
+          </p>
+          <p>
+            My academic and project experience spans <strong>systems engineering, cybersecurity, and AI</strong> — giving me a multi-layered perspective on how complex systems are built, how they fail, and how they can be made more secure and intelligent. I thrive at the intersection of these disciplines, where technical depth meets a security-first mindset.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Languages &amp; Frameworks</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-card-inner">
+            <div class="avatar-placeholder">
+              <span>LDD</span>
+            </div>
+            <div class="about-info-list">
+              <div class="info-row">
+                <span class="info-icon">📍</span>
+                <span>Torre del Greco, Napoli</span>
+              </div>
+              <div class="info-row">
+                <span class="info-icon">🎓</span>
+                <span>PoliMi — MSc CyberSecurity</span>
+              </div>
+              <div class="info-row">
+                <span class="info-icon">📧</span>
+                <span>luigididonna89@gmail.com</span>
+              </div>
+              <div class="info-row">
+                <span class="info-icon">📞</span>
+                <span>+39 351 095 51 85</span>
+              </div>
+              <div class="info-row">
+                <span class="info-icon">🇮🇹</span>
+                <span>Italian · English B2 (TOEIC 860/990) · Spanish B1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="accent">//</span> Security</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">CyberSecurity</span>
+            <span class="tag tag-accent">Threat Analysis</span>
+            <span class="tag">Blockchain</span>
+            <span class="tag">Digital Assets</span>
+            <span class="tag">Software Reliability</span>
+            <span class="tag">Cryptography</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="accent">//</span> Programming</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">Python</span>
+            <span class="tag tag-accent">Java</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">Assembly</span>
+            <span class="tag">R</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="accent">//</span> AI &amp; ML</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">Machine Learning</span>
+            <span class="tag tag-accent">Reinforcement Learning</span>
+            <span class="tag">Neural Networks (MLP)</span>
+            <span class="tag">Data Mining</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="accent">//</span> Databases</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">MongoDB</span>
+            <span class="tag tag-accent">SQL</span>
+            <span class="tag">Oracle DB</span>
+            <span class="tag">H2 DB</span>
+            <span class="tag">NoSQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="accent">//</span> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag tag-accent">Public Speaking</span>
+            <span class="tag tag-accent">Leadership</span>
+            <span class="tag">Team Building</span>
+            <span class="tag">Adaptability</span>
+            <span class="tag">International Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label">03 / Projects</div>
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Machine Learning</span>
+            <div class="project-links">
+              <a href="https://github.com/luigididonna" target="_blank" rel="noopener" title="View on GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Bank Marketing Predictor</h3>
+          <p>Predictive ML system built on a real-world telemarketing dataset, designed to identify high-conversion customer profiles and optimize resource allocation.</p>
+          <div class="project-tech">
+            <span>Python</span><span>MLP</span><span>Pandas</span><span>sklearn</span>
+          </div>
+          <div class="project-impact">
+            <span class="impact-badge">↑ 3× Recall improvement</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Reinforcement Learning</span>
+            <div class="project-links">
+              <a href="https://github.com/luigididonna" target="_blank" rel="noopener" title="View on GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Autonomous Agent — Locomotion</h3>
+          <p>Training of an autonomous agent to develop a locomotion strategy from scratch, with no predefined rules — exploring how AI systems can learn complex behaviors through experience alone.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Reinforcement Learning</span><span>Physics Simulation</span>
+          </div>
+          <div class="project-impact">
+            <span class="impact-badge">Embodied Intelligence</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Microservices</span>
+            <div class="project-links">
+              <a href="https://github.com/0debt" target="_blank" rel="noopener" title="View on GitHub">↗</a>
+            </div>
+          </div>
+          <h3>0debt — Expense Platform</h3>
+          <p>Microservices-based platform for shared expense management. Contributed the Groups Service, focused on scalability, resilience, and clean service boundaries.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>MongoDB</span><span>API Gateway</span><span>CI/CD</span>
+          </div>
+          <div class="project-impact">
+            <span class="impact-badge">Production-grade architecture</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Data Science · Healthcare</span>
+            <div class="project-links">
+              <a href="https://github.com/luigididonna" target="_blank" rel="noopener" title="View on GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Early Stroke Detection</h3>
+          <p>ML classification system for early stroke risk detection from clinical data, covering the full data science pipeline from preprocessing to model evaluation.</p>
+          <div class="project-tech">
+            <span>R</span><span>Classification</span><span>EDA</span><span>Data Mining</span>
+          </div>
+          <div class="project-impact">
+            <span class="impact-badge">Healthcare impact</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Hardware / Embedded</span>
+          </div>
+          <h3>RoboCar — Glove Controller</h3>
+          <p>Embedded system developed at STMicroelectronics: a gesture-controlled robot using motion sensors and wireless communication, programmed at low level on ST hardware.</p>
+          <div class="project-tech">
+            <span>C</span><span>ChibiOS</span><span>Bluetooth</span><span>IMU sensors</span>
+          </div>
+          <div class="project-impact">
+            <span class="impact-badge">STMicroelectronics</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Full Stack</span>
+            <div class="project-links">
+              <a href="https://github.com/luigididonna" target="_blank" rel="noopener" title="View on GitHub">↗</a>
+            </div>
+          </div>
+          <h3>Conservatory Web App</h3>
+          <p>Full-stack web application with client-server architecture, REST API, and database integration — built end-to-end from frontend to data persistence.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>jQuery</span><span>Express</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-tag">Automation · AI Workflows</span>
+          </div>
+          <h3>n8n Workflow Automation</h3>
+          <p>Personal exploration of workflow automation using n8n — connecting APIs, automating repetitive tasks, and experimenting with AI-powered pipelines out of curiosity and a drive to understand how intelligent automation works in practice.</p>
+          <div class="project-tech">
+            <span>n8n</span><span>REST APIs</span><span>Automation</span><span>AI integration</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <div class="section-label">04 / Education</div>
+      <h2 class="section-title">Academic Path</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2024 — Present</div>
+          <div class="timeline-content">
+            <h3>MSc in CyberSecurity</h3>
+            <span class="timeline-org">Politecnico di Milano</span>
+            <p>Deep focus on security engineering, software reliability, and intelligent systems. Participated in Athens Week (Bucharest) — cross-European university collaboration on software reliability and security.</p>
+            <div class="timeline-tags">
+              <span>CyberSecurity</span><span>Software Reliability</span><span>PoliMi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2022 — Mar 2023</div>
+          <div class="timeline-content">
+            <h3>Erasmus+ Exchange Semester</h3>
+            <span class="timeline-org">Universidad de Sevilla, Spain</span>
+            <p>One semester abroad as part of the Erasmus+ programme. Strengthened cross-cultural communication, academic adaptability, and language skills in a fully international environment.</p>
+            <div class="timeline-tags">
+              <span>Erasmus+</span><span>International</span><span>Spanish B1</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2020 — Mar 2024</div>
+          <div class="timeline-content">
+            <h3>BSc in Computer Engineering</h3>
+            <span class="timeline-org">Federico II University, Naples</span>
+            <p>Solid foundation in algorithms, databases, software engineering, and systems programming. Built projects spanning database design, Java platforms, and embedded systems.</p>
+            <div class="timeline-tags">
+              <span>Computer Engineering</span><span>Java</span><span>Databases</span><span>Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2015 — Jun 2020</div>
+          <div class="timeline-content">
+            <h3>High School Diploma — Scientific Studies</h3>
+            <span class="timeline-org">Liceo Scientifico Alfred Nobel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label">05 / Certifications &amp; Activities</div>
+      <h2 class="section-title">Beyond the Classroom</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <span class="cert-date">Ongoing</span>
+            <h3>HiFounders Community</h3>
+            <p>Active member of HiFounders, a network connecting students, founders, and innovators in the startup ecosystem. Engaged in events, mentorship, and collaborative initiatives around entrepreneurship and technology.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🌍</div>
+          <div class="cert-body">
+            <span class="cert-date">Mar 2026</span>
+            <h3>Athens Week — Bucharest</h3>
+            <p>Cross-European university program (Politecnico di Milano) focused on software reliability, security, and international networking.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🚀</div>
+          <div class="cert-body">
+            <span class="cert-date">May 2025</span>
+            <h3>Startup Bootcamp — Politecnico di Milano</h3>
+            <p>Intensive bootcamp on startup creation and innovation, organized by Politecnico di Milano. Hands-on experience in ideation, business modelling, and pitching to an entrepreneurial audience.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🛡️</div>
+          <div class="cert-body">
+            <span class="cert-date">Apr 2025</span>
+            <h3>EY "Challenge the Crisis" Hackathon</h3>
+            <p>Cybersecurity-focused hackathon organized by EY. Tackled real-world challenges in a cross-functional team, combining technical problem-solving with strategic thinking under pressure.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🇵🇹</div>
+          <div class="cert-body">
+            <span class="cert-date">Aug 2024</span>
+            <h3>Erasmus+ Youth Exchange — Braga</h3>
+            <p>International youth exchange programme in Braga, Portugal. Collaborative project work with peers from across Europe, focused on intercultural dialogue and personal development.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🇪🇺</div>
+          <div class="cert-body">
+            <span class="cert-date">Aug 2024</span>
+            <h3>Youth Exchange — Digital Transformation</h3>
+            <p>International programme focused on digital transformation, entrepreneurship, and intercultural collaboration. Developed project management, teamwork, and creative problem-solving skills using digital tools.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">⛓️</div>
+          <div class="cert-body">
+            <span class="cert-date">Jul 2024</span>
+            <h3>MasterZ Project Lead</h3>
+            <p>Certified in Blockchain & Digital Assets — end-to-end blockchain idea development, startup creation, and strategic planning.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔐</div>
+          <div class="cert-body">
+            <span class="cert-date">Jun 2024</span>
+            <h3>MasterZ Blockchain &amp; Digital Assets</h3>
+            <p>Deep dive into blockchain technologies, cryptographic analysis, and cybersecurity expertise.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"></div>
+          <div class="cert-body">
+            <span class="cert-date">Jan 2024</span>
+            <h3>Apple Foundation Program</h3>
+            <p>Certified by Apple Academy — creativity, entrepreneurship, public speaking, and international team project presentation.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔬</div>
+          <div class="cert-body">
+            <span class="cert-date">Aug–Sep 2023</span>
+            <h3>Neapolis Innovation Summer Campus</h3>
+            <p>ST Microelectronics — explored ST hardware and microcontroller opportunities, delivered a full team project.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-label">06 / Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Whether you're recruiting, collaborating, or just curious — I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <a href="mailto:luigididonna89@gmail.com" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">luigididonna89@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+393510955185" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Phone</p>
+            <p class="contact-value">+39 351 095 51 85</p>
+          </div>
+        </a>
+        <a href="https://github.com/luigididonna" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/luigididonna</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/luigi-di-donna" target="_blank" rel="noopener" class="contact-card reveal">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">luigi-di-donna</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Luigi Di Donna · Built with passion &amp; purpose</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
