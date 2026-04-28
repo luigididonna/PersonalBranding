@@ -25,8 +25,6 @@ document.querySelectorAll('.mob-link').forEach(link => {
    ============================================= */
 const phrases = [
   'MSc CyberSecurity @ PoliMi',
-  'Machine Learning Engineer',
-  'Microservices Architect',
   'Open to opportunities',
 ];
 
